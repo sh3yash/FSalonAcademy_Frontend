@@ -1,0 +1,101 @@
+General ChatContainer styling
+.ChatContainer {
+    background: linear-gradient(135deg, #ffebee, #fce4ec);
+    border-radius: 15px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family:  sans-serif;
+  }
+  
+  /* Header styling */
+  .Header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .Title {
+    font-size: 1.5rem;
+    color: #e91e63;
+    font-weight: bold;
+  }
+  
+  .Description {
+    font-size: 1rem;
+    color: #ad1457;
+    margin-top: 5px;
+  }
+  
+  /* Messages container */
+  .MessagesContainer {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    height: 300px;
+    overflow-y: auto;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px;
+  }
+  
+  /* Styling for user and bot messages */
+  .MessageComponent {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .MessageComponent.isUser {
+    background-color: #f8bbd0;
+    color: #880e4f;
+    text-align: right;
+    border-radius: 10px 10px 0 10px;
+  }
+  
+  .MessageComponent:not(.isUser) {
+    background-color: #e1bee7;
+    color: #4a148c;
+    text-align: left;
+    border-radius: 10px 10px 10px 0;
+  }
+  
+  /* Input container styling */
+  .InputContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .Input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #f06292;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .Input:focus {
+    border-color: #e91e63;
+  }
+  
+  /* Send button styling */
+  .Button {
+    background-color: #f48fb1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .Button:hover {
+    background-color: #e91e63;
+  }
+  

@@ -1,0 +1,552 @@
+/* Base styles for desktop */
+
+.about__us__header {
+  width: 100%;
+  height: 70vh;
+  background-image: url(https://img.freepik.com/premium-photo/beautiful-woman-applying-makeup-banner-female-model-using-visage-beauty-cosmetics-generate-ai_98402-91360.jpg?w=1380);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__us__header > h1 {
+  font-size: 5.24rem;
+  font-weight: 400;
+  font-family: var(--font-02);
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.about__us__header > h1:hover {
+  color: #ea2ea2;
+}
+
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 20px;
+  width: 100%;
+}
+
+.about-us-container-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.about-us-container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.about-section {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin-bottom: 50px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-image {
+  position: relative;
+  width: 50%;
+  height: 60vh;
+  padding: 1rem;
+}
+.about-image-1 {
+  position: relative;
+  width: 50%;
+  height: 60vh;
+  padding: 1rem;
+}
+
+.about-image img {
+  position: absolute;
+  width: 16rem;
+  height: 19rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  object-fit: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.about-image-1 img {
+  position: absolute;
+  width: 16rem;
+  height: 19rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  object-fit: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.about-image img:hover,
+.about-image-1 img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-one {
+  top: 3rem;
+  left: 10%;
+  transform: rotate(-20deg);
+}
+
+.image-two {
+  top: 4rem;
+  left: 40%;
+  transform: rotate(-20deg);
+}
+
+.about-text {
+  width: 50%;
+  height: 100%;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+  /* margin-left: 20px; */
+  overflow: visible;
+}
+
+.about-text h2 {
+  font-size: 3.24rem;
+  font-weight: 400;
+  font-family: var(--font-02);
+  color: #ea2ea2;
+  /* text-align: center; */
+}
+
+.about-text-1 h2 {
+  font-size: 3.24rem;
+  font-weight: 400;
+  font-family: var(--font-02);
+  color: #ea2ea2;
+  margin-left: 20px;
+}
+
+.about-text h2, .about-text-1 h2 {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.about-text h2:hover,
+.about-text-1 h2:hover {
+  color: #ea2ea2;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+.image-one-1 {
+  top: 3rem;
+  left: 10%;
+  transform: rotate(20deg);
+}
+
+.image-two-1 {
+  top: 4rem;
+  left: 40%;
+  transform: rotate(20deg);
+}
+
+.additional-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px auto 10vh;
+  padding: 20px;
+  padding-bottom: 0;
+  background-color: #e4badb;
+  border-radius: 10px;
+  height: 40vh;
+  width: 70%;
+  overflow: hidden;
+}
+
+.additional-text {
+  margin-bottom: 40px;
+  width: 60%;
+  overflow: visible;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.additional-text h3 {
+  font-size: 3.24rem;
+  font-weight: 400;
+  font-family: var(--font-02);
+  color: #ea2ea2;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.additional-text h3:hover {
+  color: #ea2ea2; 
+  /* text-decoration: underline; */
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+.additional-image {
+  width: 40%;
+  height: 100%;
+  z-index: 1;
+  overflow: visible;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.additional-image img {
+  max-width: 90%;
+  margin: -8rem auto 0;
+  position: absolute;
+  bottom: 0;
+  transition: transform 0.3s ease;
+}
+
+.additional-image img:hover {
+  transform: scale(1.05);
+}
+
+
+/* Media Queries for Responsiveness */
+
+/* Tablet View */
+@media (max-width: 900px) {
+  .about__us__header {
+    width: 100%;
+    height: 65vh;
+    background-image: url(https://img.freepik.com/premium-photo/beautiful-woman-applying-makeup-banner-female-model-using-visage-beauty-cosmetics-generate-ai_98402-91360.jpg?w=1380);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about__us__header h1 {
+    font-size: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .about-us-container {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    padding: 20px;
+    width: 100%;
+  }
+
+  .about-us-container-1 {
+    display: flex;
+    /* flex-direction: column;
+    align-items: center; */
+    padding: 0px;
+    width: 100%;
+  }
+
+  .about-section {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* margin-bottom: 50px; */
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .about-section-1 {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* margin-bottom: 50px; */
+    margin: fixed;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .image-one {
+    top: 3rem;
+    left: 0%;
+    transform: rotate(0deg);
+  }
+
+  .image-two {
+    top: 5rem;
+    left: 10%;
+    transform: rotate(0deg);
+  }
+
+  .image-one-1 {
+    top: 3rem;
+    left: 0%;
+    transform: rotate(0deg);
+  }
+
+  .image-two-1 {
+    top: 5rem;
+    left: 10%;
+    transform: rotate(0deg);
+  }
+
+  .about-image {
+    width: 45%;
+    height: auto;
+    /* padding: 0; */
+    /* margin-bottom: 20px; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-image-1 {
+    /* position: relative; */
+    width: 45%;
+    /* margin-top: 20px; */
+    /* height: 500px; */
+    height: 90vh;
+    display: flex;
+    /* justify-content: center; */
+    /* padding: 1rem; */
+  }
+
+  .about-image img {
+    width: 20rem;
+    height: 26rem;
+    align-items: flex-start; /* Adjust as needed */
+    /* margin-top: 40px; */
+  }
+
+  .about-image-1 img {
+    /* position: absolute; */
+    /* width: 16rem;
+    height: 19rem; */
+    margin-top: 20px;
+    width: 20rem;
+    height: 26rem;
+    align-items: flex-end;
+    /* border-radius: 10px; */
+    /* transition: all 0.3s ease; */
+
+    /* object-fit: cover; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+
+  .about-text {
+    width: 45%;
+    font-family: var(--font-02);
+    font-size: 1rem;
+    justify-content: end;
+  }
+
+  .about-text-1 {
+    width: 45%;
+    font-family: var(--font-02);
+    text-align: start;
+  }
+
+  .about-text-1 h2 {
+    font-size: 3.24rem;
+    font-weight: 400;
+    font-family: var(--font-02);
+    color: #ea2ea2;
+    /* margin-left: 20px; */
+  }
+
+  /* .about-image-1 {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  } */
+
+  .about-text p {
+    /* width: 100%; */
+    /* font-family: var(--font-02); */
+    text-align: justify;
+  }
+
+  .additional-section {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    text-align: center;
+  }
+
+  .additional-text {
+    width: 100%;
+  }
+
+  .additional-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .additional-image img {
+    max-width: 80%;
+    margin: 0;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+  .about__us__header {
+    width: 100%;
+    height: 65vh;
+    background-image: url(https://img.freepik.com/premium-photo/beautiful-woman-applying-makeup-banner-female-model-using-visage-beauty-cosmetics-generate-ai_98402-91360.jpg?w=1380);
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about__us__header h1 {
+    font-size: 2.4rem;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .about-text-1 h2 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .about-section {
+    flex-direction: column-reverse;
+  }
+  .about-section-1 {
+    flex-direction: column;
+  }
+
+  .about-image {
+    /* width: 100%; */
+    /* height:auto; */
+    /* width: 20rem;
+    height: 26rem; */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    /* padding: 0; */
+    /* margin-bottom: 20px; */
+    /* margin-top: 30px; */
+    /* display: flex; */
+
+    margin-left: 45px;
+    overflow: visible;
+  }
+
+  .about-image-1 {
+    width: 100%;
+    height: 70vh;
+    margin-left: 110px;
+    overflow: visible;
+  }
+
+  .about-image img {
+    width: 15rem;
+    height: 18rem;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 40px; */
+  }
+  .about-image-1 img {
+    width: 15rem;
+    height: 18rem;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 40px; */
+  }
+
+  .image-one {
+    top: 3rem;
+    left: 0%;
+    transform: rotate(-20deg);
+  }
+
+  .image-two {
+    top: 6rem;
+    left: 40%;
+    transform: rotate(-20deg);
+  }
+
+  .image-one-1 {
+    top: 5rem;
+    left: 0%;
+    transform: rotate(20deg);
+  }
+
+  .image-two-1 {
+    top: 4rem;
+    left: 40%;
+    transform: rotate(20deg);
+  }
+  .about-text {
+    width: 100%;
+    /* text-align: center; */
+    text-align: center;
+  }
+
+  .about-text p {
+    /* width: 100%; */
+    /* text-align: center; */
+    text-align: center;
+  }
+
+  .about-text-1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .additional-section {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .additional-text h3 {
+    font-size: 2.4rem;
+  }
+
+  .additional-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .additional-image img {
+    max-width: 80%;
+    margin: 0;
+  }
+}
