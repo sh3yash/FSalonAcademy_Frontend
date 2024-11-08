@@ -541,19 +541,27 @@ header ul li a:hover {
     transform: translateY(-100px);
 }
 
-.transformBox::before {
-    content: '';
+.transformBox {
+    position: relative;
+    overflow: hidden;
+}
+
+.transformBox .background-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background: url("../img/land2.jpg");
+    object-fit: cover;
     z-index: -2;
 }
+
+.transformBox h2,
+.transformBox p {
+    position: relative;
+    z-index: 1; /* Ensures text is above the background image */
+}
+
 
 .transformBox::after {
     content: '';

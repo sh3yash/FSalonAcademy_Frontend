@@ -1,5 +1,4 @@
-import { React } from "react";
-import "./GlassCards.css"; // Make sure to create this CSS file
+import React from "react";
 import visionImage from "../../assets/vision.png";
 import missionImage from "../../assets/mission.png";
 import goalsImage from "../../assets/goals.png";
@@ -31,15 +30,24 @@ const GlassCards = () => {
   ];
 
   return (
-    <div className="container">
+    <div
+      className="relative flex flex-wrap justify-center gap-5 p-8 mb-16 bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${GirlWithBrush})`,
+      }}
+    >
       {cardsData.map((card) => (
-        <div key={card.id} className="card">
-          <div className="card-content">
-            <div className="icon">{card.icon}</div>
-            <img src={card.image} alt={card.title} className="card-image"/>
-            <h3>{card.title}</h3>
-            <p>{card.content}</p>
-          </div>
+        <div
+          key={card.id}
+          className="relative flex flex-col items-center w-[90%] max-w-xs md:max-w-sm p-5 h-90 text-center bg-white/20 border border-white/30 rounded-lg shadow-lg transition-transform transform hover:rotate-y-6 hover:rotate-x-3"
+        >
+          <img src={card.image} alt={card.title} className="w-16 h-16 rounded-lg mb-2" />
+          <h3 className="mt-[-1rem] text-2xl md:text-3xl font-medium text-pink-500 transition-transform hover:scale-105">
+            {card.title}
+          </h3>
+          <p className="mt-4 text-white text-base md:text-lg leading-relaxed">
+            {card.content}
+          </p>
         </div>
       ))}
     </div>
