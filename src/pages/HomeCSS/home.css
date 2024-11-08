@@ -453,20 +453,21 @@ header ul li a:hover {
     gap: 3rem;
 }
 
-.DiscountSection::before {
-    content: '';
+.DiscountSection {
+    position: relative;
+    overflow: hidden;
+}
+
+.DiscountSection .background-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background: url("../img/discountBackGround.jpg");
+    object-fit: cover;
     z-index: -2;
-
 }
+
 
 .DiscountSection::after {
     content: '';
