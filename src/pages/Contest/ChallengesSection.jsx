@@ -1,24 +1,27 @@
 import { motion } from 'framer-motion';
+import model5 from '../../assets/model5.jpeg';
+import result4 from '../../assets/result4.jpeg';  // Import your local image
+import result3 from '../../assets/result3.jpeg';  // Import your local image
 
 const challenges = [
   { 
     title: 'Fashion Design Challenge', 
     description: 'Participants showcase their creativity by designing a unique fashion outfit based on a given theme.', 
-    image: '/src/assets/model5.jpeg', 
+    image: model5, // Use imported image
     registrationLink: '#register-fashion-design', 
     challengeLink: '#fashion-design-challenge' 
   },
   { 
     title: 'Talent Showcase Competition', 
     description: 'An opportunity for contestants to demonstrate their unique talents, from singing to dancing to magic tricks.', 
-    image: '/src/assets/result4.jpeg', 
+    image: result4, // Use imported image
     registrationLink: '#register-talent-showcase', 
     challengeLink: '#talent-showcase-competition' 
   },
   { 
     title: 'New Component', 
     description: 'An opportunity for contestants to demonstrate their unique talents, from singing to dancing to magic tricks.', 
-    image: '/src/assets/result3.jpeg', 
+    image: result3, // Use imported image
     registrationLink: '#register-talent-showcase', 
     challengeLink: '#talent-showcase-competition' 
   },
@@ -37,9 +40,10 @@ const ChallengesSection = ({ searchQuery }) => {
         {filteredChallenges.map((challenge, index) => (
           <motion.div
             key={index}
-            className="bg-white p-4 shadow-lg rounded-lg transition-colors duration-300 hover:bg-pink-300" // Ensure this class is applied correctly
+            className="bg-white p-4 shadow-lg rounded-lg transition-colors duration-300 hover:bg-pink-300"
           >
             <div className="w-full h-64 md:h-96 lg:h-128 overflow-hidden relative rounded-lg">
+              {/* Use the imported image variable here */}
               <img src={challenge.image} alt={challenge.title} className="w-full h-full object-cover rounded-lg" />
             </div>
             <h3 className="text-xl font-bold mt-4 text-pink-600">{challenge.title}</h3>
