@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import backgroundImage from "../../img/background180.svg";
+import backgroundImage from "../../img/bg2.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -90,11 +90,18 @@ const Home = () => {
             </header> */}
 
       <section className={`sectionFirst ${menuActive ? "active" : ""}`}>
+      <img
+    src={backgroundImage}
+    alt="background"
+    className="absolute inset-0 w-full h-full object-cover opacity-70 -z-10"
+  />
         <Slider {...settings} style={{ overflow: "hidden" }}>
-          <div
-            className="frontPage"
-            style={{ backgroundImage: "url(./img/background180.svg)" }}
-          >
+          <div className="frontPage">
+            {/* <img
+              src={backgroundImage}
+              alt="background"
+            //   className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+            /> */}
             <div className="address">
               Be the most beautiful and fashionable person
             </div>
